@@ -16,10 +16,6 @@ maxside = 0
 maxhigh = 0
 side = 0
 for i in range(6):
-    test = li[i][0]
-    test1 = li[i-1][0]
-    test2 = li[i-2][0]
-    test3 = li[i-3][0]
     #최대넓이 구하기
     if (li[i][0] == 1 or li[i][0] == 2) and li[i][1] > maxside:
         maxside = li[i][1]

@@ -10,11 +10,14 @@ N = int(input())
 A = 0
 if N == 1 or N == 2 or N == 4 or N == 7:
     print(-1)
+# 예외 사항 추가(5로 나눌 수 있는 경우, 아래로 가지 않고 바로 처리)
+elif N % 5 == 0:
+    print(N // 5)
 elif N % 5 == 3:
     print((N // 5) + 1)
 elif N % 5 != 3:
     # 순수 3의 배수인지 확인
-    if N % 3 == 0:
+    if N % 3 == 0 and N <= 15: 
         print(N // 3)
     # 순수 3의 배수가 아니라면, 나머지가 3의 배수인지 확인
     else:
@@ -22,7 +25,7 @@ elif N % 5 != 3:
         if A % 3 == 0:
             print((A // 3) + ((N // 5) - 1))
         elif A % 3 != 0:
-            A = (N % 5) + 5
+            A = A + 5
             print((A // 3) + ((N // 5) - 2))
 
 
