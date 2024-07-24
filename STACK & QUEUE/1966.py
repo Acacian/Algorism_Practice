@@ -7,7 +7,9 @@ T = int(input())
 
 for _ in range(T):
     n, m = map(int, input().split())
-    priorities = list(map(int, input().split()))
+    priorities = list(map(int, input().split()))\
+    # 포지션 위치를 따로 저장해야 동일한 숫자가 나왔을 때 비교가 가능함
+    # 이전 문제처럼 두 개의 리스트를 각자 사용한다
     positions = list(range(n))
     queue = deque(priorities)
     position_queue = deque(positions)

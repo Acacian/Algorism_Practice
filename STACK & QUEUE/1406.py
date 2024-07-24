@@ -6,6 +6,7 @@ input = sys.stdin.readline
 left = deque(input().strip())
 right = deque()
 
+# 하나의 리스트만 사용하면 중간에 못 넣으니까 저장용으로 하나 더 만듬
 for _ in range(int(input())):
     word = input().strip()
     
