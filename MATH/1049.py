@@ -17,11 +17,11 @@ for _ in range(M):
 
 # 최소값.. 
 ans = 0
-ans += (N // 6) * six
+ans += min((N // 6) * six , (N // 6) * (one * 6))
 
 if (N % 6) * one > six:
     ans += six
 else:
-    ans += one * (N % 6)
+    ans += one * (N % 6) 
 
 print(int(ans))
