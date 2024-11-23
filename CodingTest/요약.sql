@@ -24,7 +24,7 @@ JOIN ~~ ON a.~~ = b.~~
 
 문제에서 특정 부분 필터링이 필요한 경우
 WHERE 조건~~ 또는 = ' ' 사용해서 필터
-같이 사용 가능할 만한 것 : AND / BETWEEN / LIKE ' ' (~테이블 안에 ' '가 있는가?) / EXISTS, NOT EXISTS(SELECT = *, FROM ~~ WHERE ~~)
+같이 사용 가능할 만한 것 : AND / BETWEEN / LIKE ' ' (~테이블 안에 ' '가 있는가?) / EXISTS, NOT EXISTS(SELECT = *, FROM ~~ WHERE ~~) / IN ' ' << ' '랑 같은 게 있는가?
 
 문제에 '~별'이라는 게 들어갈 경우
 GROUP BY ~~
