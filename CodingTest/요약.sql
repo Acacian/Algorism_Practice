@@ -8,7 +8,7 @@ JOIN ~~ ON ~~ = ~~
 보여줄 컬럼
 SELECT ~~~~
 추가 *
-DISTINCT : 중복삭제
+DISTINCT ~~ : 중복삭제
 DATE_FORMAT(~~ , ' 형태(예 : %Y-%m-%d) ') AS ~~
 FLOOR : 내림 / ROUND : 올림 그리고 ( , 숫자) 이렇게 뒤에 , 숫자 넣으면 소수점 ~~자리까지
 MONTH(~~)
